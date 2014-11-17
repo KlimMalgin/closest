@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/KlimMalgin/react-closest.git"
+    "url": "git://github.com/KlimMalgin/closest.git"
   },
   "keywords": [
     "closest",
@@ -14,7 +14,7 @@
   "author": "KlimMalgin",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/KlimMalgin/react-closest/issues"
+    "url": "https://github.com/KlimMalgin/closest/issues"
   },
-  "homepage": "https://github.com/KlimMalgin/react-closest.git"
+  "homepage": "https://github.com/KlimMalgin/closest.git"
 }
