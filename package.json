@@ -1,0 +1,20 @@
+{
+  "name": "closest",
+  "version": "0.0.1",
+  "description": "Check or find the closest of parent by class",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/KlimMalgin/react-closest.git"
+  },
+  "keywords": [
+    "closest",
+    "parent"
+  ],
+  "author": "KlimMalgin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KlimMalgin/react-closest/issues"
+  },
+  "homepage": "https://github.com/KlimMalgin/react-closest.git"
+}
