@@ -19,19 +19,28 @@ function getClosestParent (el, targetClass, iter, stop) {
             getClosestParent(el.parentNode, targetClass, ++iter, stop) : null;
 }
 
-module.exports = {
 
-    /**
-     * Bool-проверка - существует родитель с заданным классом или нет
-     * @returns {boolean}
-     */
-    closest: function () {
-        return !!getClosestParent.apply({}, arguments);
-    },
+(function (root, f) {
+    (typeof define === 'function' && define.amd) ?
+        define([], function () { root.closest = f(); }) :
+        typeof module !== 'undefined' ?
+            module.exports = f() :
+            root.closest = f();
+}(this, function () {
 
-    /**
-     * Непосредственно поиск элемента
-     */
-    isClosest: getClosestParent
-};
+    return {
+        /**
+         * Bool-проверка - существует родитель с заданным классом или нет
+         * @returns {boolean}
+         */
+        closest: function () {
+            return !!getClosestParent.apply({}, arguments);
+        },
 
+        /**
+         * Непосредственно поиск элемента
+         */
+        isClosest: getClosestParent
+    };
+
+}));
