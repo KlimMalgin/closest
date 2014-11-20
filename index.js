@@ -27,20 +27,5 @@ function getClosestParent (el, targetClass, iter, stop) {
             module.exports = f() :
             root.closest = f();
 }(this, function () {
-
-    return {
-        /**
-         * Bool-проверка - существует родитель с заданным классом или нет
-         * @returns {boolean}
-         */
-        closest: function () {
-            return !!getClosestParent.apply({}, arguments);
-        },
-
-        /**
-         * Непосредственно поиск элемента
-         */
-        isClosest: getClosestParent
-    };
-
+    return getClosestParent;
 }));
